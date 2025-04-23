@@ -198,7 +198,9 @@ def analyze(temperature, model_name):
 
 # Main App
 def main():
-    st.image("RR.jpeg",width=300)
+    left_co, cent_co, last_co= st.columns(3)
+    with cent_co:
+        st.image("RR.jpeg",width=300)
     st.markdown(
         """
         <div style='text-align: center;'>
