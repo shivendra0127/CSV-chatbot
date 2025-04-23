@@ -20,7 +20,6 @@ st.set_page_config(page_title="CSV AI", layout="wide")
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 def home_page():
-    st.image("RR.jpeg",width=300)
     st.write("""Select any one feature from above sliderbox: \n
     1. Chat with CSV \n
     2. Summarize CSV \n
@@ -199,6 +198,7 @@ def analyze(temperature, model_name):
 
 # Main App
 def main():
+    st.image("RR.jpeg",width=300)
     st.markdown(
         """
         <div style='text-align: center;'>
